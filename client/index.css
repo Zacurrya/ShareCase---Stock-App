@@ -59,38 +59,49 @@ main {
     background-color: transparent;
 }
 
+.SearchBar {
+    margin: 10px 20px;
+    width: 320px;
+    height: 40px;
+    background-image: "/images/Search.png";
+    background-position: 10px 10px;
+    border-radius: 10px;
+}
+
+.Stock {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
 .Stock > div {
-    padding: 0px 0px;
+    justify-content: space-between;
+    padding: 2px 3px;
     display:flex;
+    flex-direction: row;
     align-items: top;
     color:rgb(242, 254, 253);
-    margin: 10px 100px;
+    margin: 10px 20px;
     background-color: 242925;
     width: 450px;
     height: 130px;
     border-style: solid;
     border-radius: 13px;
     border-width: medium;
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0.1);
 }
-.Stock > div > span > img {
-    border-style: solid;
-    border-width: 2px;
+.Stock > span > img {
+    border: 5px solid transparent;
     object-fit: contain;
     outline-style: solid;
-    outline-color: rgb(0, 0, 0);
+    outline-color: rgba(63, 63, 63, 0.1);
     outline-width: 3px;
     background-color: rgb(250, 255, 255);
-    border-radius: 8px;
-    margin: 15px -100px;
+    border-radius: 23px;
+    margin: 32px 0px;
     width: 80px;
     height: 80px
 }
-.Stock > div > h2 {
-    margin: 0px 0px;
-}
 .Stock > div > h3 {
-    margin: 0px 0px;
     font-size: 15px;
 }
 .Stock > div > p {

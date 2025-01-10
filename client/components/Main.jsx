@@ -1,5 +1,6 @@
 import React from 'react'
 import StockList from './StockList'
+import SearchBar from './SearchBar';
 export default function Main() {
     const d = new Date();
     let year = d.getFullYear();
@@ -9,6 +10,7 @@ export default function Main() {
             <h1>💸 Visualize your steps to wealth 💸</h1>
             <p>{ date }</p><br/>
             <p>ShareCase is a platform which allows you to view your portfolio, plan ahead and view stocks.</p>
+            <SearchBar />
             <StockList />
         </main>
     )
